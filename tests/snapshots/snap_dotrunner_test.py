@@ -30,7 +30,7 @@ snapshots['test_modulemap 1'] = {
 
 snapshots['test_dirs 1'] = [
     '/fixtures/demo-system/asdf',
+    '/fixtures/demo-system/brew',
     '/fixtures/demo-system/osx',
-    '/fixtures/demo-system/python',
-    '/fixtures/demo-system/brew'
+    '/fixtures/demo-system/python'
 ]

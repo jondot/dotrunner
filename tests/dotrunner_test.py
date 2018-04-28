@@ -60,7 +60,7 @@ def test_runlist():
 
 def test_dirs(snapshot):
     snapshot.assert_match(
-        sanitize(dirs(fixture('demo-system'), FileSystemIO())))
+        sorted(sanitize(dirs(fixture('demo-system'), FileSystemIO()))))
 
 
 def test_run():
