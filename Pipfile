@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+docopt = "*"
+toolz = "*"
+networkx = "*"
+"delegator.py" = "*"
+colorama = "*"
+
+[dev-packages]
+pytest = "*"
+snapshottest = "*"
+pytest-watch = "*"
+wheel = "*"
+nose = "*"
+nose-watch = "*"
+twine = "*"
+
+[requires]
+python_version = "3.6.5"

@@ -1,0 +1,22 @@
+language: python
+python:
+  - '2.7'
+  - '3.6'
+install:
+  - make init
+  - make install
+script: make test
+jobs:
+  include:
+    - stage: pypi
+      python: '3.6'
+      if: tag =~ ^v\d.*
+      deploy:
+        provider: pypi
+        user: jondot
+        on:
+          tags: true
+          skip_cleanup: true
+        password: 
+          secure: "d6djJ0R1R4OxK6E54DaxRqU47yFeB7CxbPZ9E064cKW4g1sciS2dUTm89Tjm5serr+qCnXs+DBQvCBwKoKOISnj+G7oxaM8WeCkCgvLtA63rXAx2j2stPmmsYl/v4TANYVH7N9q9Pg4+Y62aHZ6q7ijViCfm3JM/Ivhbb2lKu83O3uAlvvPUmA7MMMSkQEbFwWS3ZNvtnVBEWNthAfBeUHN2LqnllpsRGfLlf78fHS5cOMGk1JehStrccl0dSxXryWr+bIVQonNGsTw7rRHRNJxEDcxEYx1usW6mYQKdKzcNghluWKZyd+ShzvdmUfPD9jlIpYcbzSik4dFK2FuEDzmRxGoR8WOCzDp4NaW9bPb4G4DdLOW39BujfU30Qc4wTrEnyfm7t9rFWF1md1SEkC3sWwI+I2aUzHcYpsHJDs9gUGT7S77gA1p7NbzLEWhL+NFb1SERpwf4O6Pmmj5/Kunw3x35K/BxIyA9le5G0T9FT25Y5zJ+8lzEacMparJpSwDsiuMDE7PFBgp9sZiiOmssQULC1ApE/WoblY1lDOmQ/ryMEdUIMlLu/Dk8xaPyL/3i6sgRH6bJDi/1q3unhgFZ/xVjNht1zdtawbhwz/9q0fdtgzIj/feDHAcberKHkfHZwNauyCNViqyUbL8M36pM0qXmU3DG/rqrbqJmaVY="
+    
