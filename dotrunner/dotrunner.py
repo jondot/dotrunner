@@ -25,11 +25,11 @@ class FileSystemIO(object):
         if (res.return_code == 0):
             print('✅ {} {} ({})'.format(datetime.today(), cmd, cwd))
             if (res.out):
-                print(Style.DIM + res.out.strip(), 'gray')
+                print(Style.DIM + res.out.strip())
         else:
             print('❌ {} {} ({})'.format(datetime.today(), cmd, cwd))
             if (res.err):
-                print(Style.DIM + res.err.strip(), 'gray')
+                print(Style.DIM + res.err.strip())
 
         return (res.return_code, res.out)
 
