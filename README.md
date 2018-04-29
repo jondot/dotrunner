@@ -2,8 +2,8 @@
 
 Use [`dotrunner`](https://github.com/jondot/dotrunner) and [`dotlinker`](https://github.com/jondot/dotlinker) to build a fantastically aesthetic macOS dotfiles set up.
 
-✅ Organize by topics (folder modules), i.e. 'nodejs', 'osx', and 'python'.
-✅ DAG (Directed Acyclic Graph) based runner for a powerful dependency system.
+✅ Organize by topics (folder modules), i.e. 'nodejs', 'osx', and 'python'.  
+✅ DAG (Directed Acyclic Graph) based runner for a powerful dependency system.  
 ✅ No shell scripts, gunk, yuck, and hairballs required
 
 Here's an example dotfiles repo:
