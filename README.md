@@ -75,6 +75,7 @@ This system follows a few simple principles:
 
 * Every directory is a _module_ if it has an `install.yml` file and it doesn't start with a dash (-).
 * Each module can describe `deps` (dependencies) and a `script` to run.
+* Each module actions must be idempotent: running the same script multiple times will have the same result. In other words `dotrunner` will happily run your scripts again on reruns/failures and you're responsible to do validation/checks in your scripts.
 
 Here are a few examples of an `install.yml` file:
 
