@@ -34,3 +34,10 @@ snapshots['test_dirs 1'] = [
     '/fixtures/demo-system/osx',
     '/fixtures/demo-system/python'
 ]
+
+snapshots['test_run 1'] = [
+    '/fixtures/demo-system/asdf/echo asdf',
+    '/fixtures/demo-system/brew/echo brew',
+    '/fixtures/demo-system/osx/install.sh',
+    '/fixtures/demo-system/python/echo hello'
+]

@@ -63,10 +63,6 @@ def test_dirs(snapshot):
         sorted(sanitize(dirs(fixture('demo-system'), FileSystemIO()))))
 
 
-def test_run():
-    assert sanitize(run(fixture('demo-system'), FakeIO())) == [
-        '/fixtures/demo-system/osx/install.sh',
-        '/fixtures/demo-system/brew/echo brew',
-        '/fixtures/demo-system/asdf/echo asdf',
-        '/fixtures/demo-system/python/echo hello'
-    ]
+def test_run(snapshot):
+    snapshot.assert_match(
+        sorted(sanitize(run(fixture('demo-system'), FakeIO()))))
