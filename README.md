@@ -32,6 +32,8 @@ deps:
 
 ## Quick Start
 
+Note: check out the [example](example/) if you'd like to test this all out on a Docker container instance.
+
 Install:
 
 ```

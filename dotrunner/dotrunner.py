@@ -10,6 +10,7 @@ import yaml
 from colorama import Style
 from datetime import datetime
 from .version import VERSION
+from pyspin.spin import make_spin, Default
 
 
 class FileSystemIO(object):
@@ -20,6 +21,7 @@ class FileSystemIO(object):
         except:  # noqa
             return None
 
+    @make_spin(Default, '')
     def execute(self, cwd, cmd):
         res = delegator.run(cmd, cwd=cwd)
         if (res.return_code == 0):

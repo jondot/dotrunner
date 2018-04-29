@@ -25,5 +25,6 @@ setup(
         dotrunner=dotrunner.dotrunner:main
     ''',
     install_requires=[
-        'toolz', 'docopt', 'networkx', 'pyyaml', 'delegator.py', 'colorama'
+        'toolz', 'docopt', 'networkx', 'pyyaml', 'delegator.py', 'colorama',
+        'pyspin'
     ])

@@ -1,0 +1,3 @@
+script: apk add --update fish
+deps:
+- system

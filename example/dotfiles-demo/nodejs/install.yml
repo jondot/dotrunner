@@ -1,0 +1,4 @@
+script: sh ./install.sh
+deps:
+- system
+- python

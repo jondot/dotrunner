@@ -9,6 +9,7 @@ toolz = "*"
 networkx = "*"
 "delegator.py" = "*"
 colorama = "*"
+pyspin = "*"
 
 [dev-packages]
 pytest = "*"
