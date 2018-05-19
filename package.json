@@ -11,11 +11,19 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^22.4.3"
+    "jest": "^22.4.3",
+    "jest-pytest": "^0.0.3"
   },
   "jest": {
-    "moduleFileExtensions": ["py"],
-    "runner": "<rootDir>/jest-pytest",
-    "testMatch": ["**/?(*_)test.py"]
+    "moduleFileExtensions": [
+      "py"
+    ],
+    "runner": "jest-pytest",
+    "testPathIgnorePatterns": [
+      "snap_.*\\.py"
+    ],
+    "testMatch": [
+      "**/?(*_)test.py"
+    ]
   }
 }
