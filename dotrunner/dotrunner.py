@@ -17,7 +17,7 @@ class FileSystemIO(object):
     def yaml(self, f):
         try:
             with open(f) as fp:
-                return yaml.load(fp)
+                return yaml.safe_load(fp)
         except:  # noqa
             return None
 
