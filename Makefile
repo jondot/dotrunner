@@ -13,6 +13,7 @@ watch:
 dist:
 	rm -rf dist
 	rm -rf build
+	pandoc --from=markdown --to=rst --output=README.rst README.md
 	python setup.py sdist bdist_wheel
 dist-install:
 	python setup.py install

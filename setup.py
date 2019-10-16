@@ -3,7 +3,7 @@
 from dotrunner.version import VERSION
 from setuptools import setup, find_packages
 
-with open('README.md') as f:
+with open('README.rst') as f:
     readme = f.read()
 
 with open('LICENSE') as f:
@@ -15,7 +15,7 @@ setup(
     description='Links dotfiles',
     long_description=readme,
     author='Dotan Nahum',
-    data_files=[('', ['LICENSE', 'README.md'])],
+    data_files=[('', ['LICENSE', 'README.md', 'README.rst'])],
     author_email='jondotan@gmail.com',
     url='https://github.com/jondot/dotrunner',
     license=license,
